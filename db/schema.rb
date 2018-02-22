@@ -10,11 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180125152003) do
+ActiveRecord::Schema.define(version: 20180222062319) do
 
   create_table "event_categories", force: :cascade do |t|
     t.string "name"
     t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string "title"
+    t.string "location"
+    t.datetime "start_at"
+    t.integer "ticket_price"
+    t.integer "ticket_quantity"
+    t.integer "event_category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

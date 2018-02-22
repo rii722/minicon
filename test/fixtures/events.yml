@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  location: 
+  start_at: 2018-02-22 06:23:19
+  ticket_price: 1
+  ticket_quantity: 1
+  event_category_id: 1
+
+two:
+  title: MyString
+  location: 
+  start_at: 2018-02-22 06:23:19
+  ticket_price: 1
+  ticket_quantity: 1
+  event_category_id: 1
